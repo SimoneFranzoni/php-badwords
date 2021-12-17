@@ -2,6 +2,9 @@
 
 $text= 'Ciao a tutti';
 
+echo $text;
+
+var_dump($text);
 
 ?>
 
@@ -18,6 +21,7 @@ $text= 'Ciao a tutti';
     <title>php-badwords</title>
 </head>
 <body>
-    <div><?php echo $text ?></div>
+    <h4>Il testo della stringa è "<?php echo $text ?>"</h4>
+    <h4>La stringa text è lunga : <?php echo strlen($text) ?> </h4>
 </body>
 </html>
