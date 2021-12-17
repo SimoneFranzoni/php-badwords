@@ -6,6 +6,8 @@ echo $text;
 
 var_dump($text);
 
+$badword = 'stronzo';
+
 ?>
 
 
@@ -23,5 +25,7 @@ var_dump($text);
 <body>
     <h4>Il testo della stringa è "<?php echo $text ?>"</h4>
     <h4>La stringa text è lunga : <?php echo strlen($text) ?> </h4>
+
+    <h2><?php echo str_replace('stronzo','***', $badword)  ?></h2>
 </body>
 </html>
